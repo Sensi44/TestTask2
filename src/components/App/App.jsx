@@ -17,9 +17,7 @@ function App() {
   const [tooltip, setTooltip] = useState('');
   const [add, setAdd] = useState({ name: '', value: '' });
 
-  const saveHandler = () => {
-    setText(JSON.stringify(tData));
-  };
+  const saveHandler = () => setText(JSON.stringify(tData));
 
   const loadHandler = () => {
     try {

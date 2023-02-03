@@ -22,7 +22,6 @@ function Item({ name, value, id, confirmEditValue, confirmEditName, deleteRow, m
         };
       });
     }
-    setEditName(!editName);
     setEditValue(!editValue);
   };
 
@@ -38,7 +37,6 @@ function Item({ name, value, id, confirmEditValue, confirmEditName, deleteRow, m
       });
     }
     setEditName(!editName);
-    setEditValue(!editValue);
   };
 
   const changeValue = (e) => {
@@ -91,3 +89,10 @@ function Item({ name, value, id, confirmEditValue, confirmEditName, deleteRow, m
 }
 
 export default Item;
+
+// todo  добавить id
+// todo  добавить корректные проверки данных, запрет пустых строк и т.д.
+// todo  разбить всё по маленьким компонентам
+// todo  добавить слушатель события на всю форму и получать через делегирование нужную ячейку.
+// todo  упростить некоторые функции, разнести всё по утилитам
+// todo  переключение режима редактирования по клику на текст
